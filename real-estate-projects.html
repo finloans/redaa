@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FinLoans Real Estate Projects</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .project {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .project-title {
+            font-size: 1.5em;
+            color: #333;
+            cursor: pointer;
+        }
+        .project-details {
+            margin: 10px 0;
+            display: none; /* Initially hidden */
+        }
+        .project-details strong {
+            color: #333;
+        }
+        .pdf-links a {
+            display: inline-block;
+            margin-right: 15px;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .pdf-links a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>FinLoans Real Estate Projects</h1>
+
+        <!-- Project 1 -->
+        <div class="project">
+            <h2 class="project-title" onclick="toggleDetails('details1')">Project 1: Sunshine Residency</h2>
+            <div id="details1" class="project-details">
+                <p><strong>Promoter Name:</strong> ABC Developers Pvt. Ltd.</p>
+                <p><strong>Location:</strong> Bhubaneswar, Odisha</p>
+                <p><strong>RERA Number:</strong> ORERA/123456</p>
+                <div class="pdf-links">
+                    <a href="Project1/project1certificate.pdf" target="_blank">View Certificate</a>
+                    <a href="Project1/project1building-plan.pdf" target="_blank">View Building Plan</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project">
+            <h2 class="project-title" onclick="toggleDetails('details2')">Project 2: Emerald Heights</h2>
+            <div id="details2" class="project-details">
+                <p><strong>Promoter Name:</strong> XYZ Builders Pvt. Ltd.</p>
+                <p><strong>Location:</strong> Cuttack, Odisha</p>
+                <p><strong>RERA Number:</strong> ORERA/789123</p>
+                <div class="pdf-links">
+                    <a href="Project2/project2certificate.pdf" target="_blank">View Certificate</a>
+                    <a href="Project2/project2building-plan.pdf" target="_blank">View Building Plan</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="toggle-details.js"></script>
+</body>
+</html>
+
